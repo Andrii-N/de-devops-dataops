@@ -1,0 +1,112 @@
+[
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {},
+      "authenticationInfo": {
+        "principalEmail": "naionma7600@gmail.com",
+        "oauthInfo": {
+          "oauthClientId": "764086051850-6qr4p6gpi6hn506pt8ejuq83di341hur.apps.googleusercontent.com"
+        }
+      },
+      "requestMetadata": {
+        "callerIp": "31.131.106.172",
+        "callerSuppliedUserAgent": "google-api-go-client/0.5 Terraform/1.13.0 (+https://www.terraform.io) Terraform-Plugin-SDK/2.40.1 terraform-provider-google/dev7,gzip(gfe)",
+        "requestAttributes": {
+          "time": "2026-10-22T20:15:04.074291615Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "storage.googleapis.com",
+      "methodName": "storage.buckets.create",
+      "authorizationInfo": [
+        {
+          "resource": "projects/_/buckets/de-devops-dataops-tfstate",
+          "permission": "storage.buckets.create",
+          "granted": true,
+          "resourceAttributes": {}
+        }
+      ],
+      "resourceName": "projects/_/buckets/de-devops-dataops-tfstate",
+      "serviceData": {
+        "@type": "type.googleapis.com/google.iam.v1.logging.AuditData",
+        "policyDelta": {
+          "bindingDeltas": [
+            {
+              "action": "ADD",
+              "role": "roles/storage.legacyBucketOwner",
+              "member": "projectEditor:de-devops-dataops"
+            },
+            {
+              "action": "ADD",
+              "role": "roles/storage.legacyBucketOwner",
+              "member": "projectOwner:de-devops-dataops"
+            },
+            {
+              "action": "ADD",
+              "role": "roles/storage.legacyBucketReader",
+              "member": "projectViewer:de-devops-dataops"
+            },
+            {
+              "action": "ADD",
+              "role": "roles/storage.legacyObjectOwner",
+              "member": "projectEditor:de-devops-dataops"
+            },
+            {
+              "action": "ADD",
+              "role": "roles/storage.legacyObjectOwner",
+              "member": "projectOwner:de-devops-dataops"
+            },
+            {
+              "action": "ADD",
+              "role": "roles/storage.legacyObjectReader",
+              "member": "projectViewer:de-devops-dataops"
+            }
+          ]
+        }
+      },
+      "request": {
+        "defaultObjectAcl": {
+          "bindings": [
+            {
+              "members": [
+                "projectViewer:de-devops-dataops"
+              ],
+              "role": "roles/storage.legacyObjectReader"
+            },
+            {
+              "role": "roles/storage.legacyObjectOwner",
+              "members": [
+                "projectOwner:de-devops-dataops",
+                "projectEditor:de-devops-dataops"
+              ]
+            }
+          ],
+          "@type": "type.googleapis.com/google.iam.v1.Policy"
+        }
+      },
+      "metadata": {
+        "session_id": "AP6rU80a3nB75PR1Knqsq0DTvYc7HqML5st-qDLxSS1up4XX3QR0QtUTWCk_YWoah8dRc1-o"
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "us-central1"
+        ]
+      }
+    },
+    "insertId": "5l0x0jebr7vx",
+    "resource": {
+      "type": "gcs_bucket",
+      "labels": {
+        "project_id": "de-devops-dataops",
+        "location": "us-central1",
+        "bucket_name": "de-devops-dataops-tfstate"
+      }
+    },
+    "timestamp": "2026-10-22T20:15:04.066526146Z",
+    "severity": "NOTICE",
+    "logName": "projects/de-devops-dataops/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2026-10-22T20:15:06.343035947Z"
+  }
+]
