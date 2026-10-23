@@ -1,0 +1,188 @@
+[
+{
+  "protoPayload": {
+    "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+    "status": {},
+    "authenticationInfo": {
+      "principalEmail": "naionma7600@gmail.com",
+      "oauthInfo": {
+        "oauthClientId": "764086051850-6qr4p6gpi6hn506pt8ejuq83di341hur.apps.googleusercontent.com"
+      }
+    },
+    "requestMetadata": {
+      "callerIp": "31.131.97.173",
+      "callerSuppliedUserAgent": "Terraform/1.13.0 (+https://www.terraform.io) Terraform-Plugin-SDK/2.40.1 terraform-provider-google/dev7,gzip(gfe)",
+      "requestAttributes": {},
+      "destinationAttributes": {}
+    },
+    "serviceName": "bigquery.googleapis.com",
+    "methodName": "datasetservice.insert",
+    "authorizationInfo": [
+      {
+        "resource": "projects/de-devops-dataops",
+        "permission": "bigquery.datasets.create",
+        "granted": true,
+        "resourceAttributes": {},
+        "permissionType": "ADMIN_WRITE"
+      }
+    ],
+    "resourceName": "projects/de-devops-dataops/datasets",
+    "serviceData": {
+      "@type": "type.googleapis.com/google.cloud.bigquery.logging.v1.AuditData",
+      "datasetInsertRequest": {
+        "resource": {
+          "datasetName": {
+            "projectId": "de-devops-dataops",
+            "datasetId": "bq_dataset_hw_lecture_1"
+          },
+          "info": {
+            "labels": {
+              "goog-terraform-provisioned": "true"
+            }
+          },
+          "acl": {}
+        }
+      },
+      "datasetInsertResponse": {
+        "resource": {
+          "datasetName": {
+            "projectId": "de-devops-dataops",
+            "datasetId": "bq_dataset_hw_lecture_1"
+          },
+          "info": {
+            "labels": {
+              "goog-terraform-provisioned": "true"
+            }
+          },
+          "createTime": "2026-10-23T20:33:42.637Z",
+          "updateTime": "2026-10-23T20:33:42.637Z",
+          "acl": {
+            "entries": [
+              {
+                "role": "WRITER",
+                "specialGroup": "PROJECT_WRITERS",
+                "viewName": {}
+              },
+              {
+                "role": "OWNER",
+                "specialGroup": "PROJECT_OWNERS",
+                "viewName": {}
+              },
+              {
+                "role": "OWNER",
+                "userEmail": "naionma7600@gmail.com",
+                "specialGroup": "PROJECT_OWNERS",
+                "viewName": {}
+              },
+              {
+                "role": "READER",
+                "specialGroup": "PROJECT_READERS",
+                "viewName": {}
+              }
+            ]
+          }
+        }
+      }
+    },
+    "resourceLocation": {
+      "currentLocations": [
+        "us-central1"
+      ]
+    }
+  },
+  "insertId": "tq1m9dd808g",
+  "resource": {
+    "type": "bigquery_resource",
+    "labels": {
+      "project_id": "de-devops-dataops"
+    }
+  },
+  "timestamp": "2026-10-23T20:33:42.757993Z",
+  "severity": "NOTICE",
+  "logName": "projects/de-devops-dataops/logs/cloudaudit.googleapis.com%2Factivity",
+  "receiveTimestamp": "2026-10-23T20:33:43.766139439Z"
+},
+{
+  "protoPayload": {
+    "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+    "status": {},
+    "authenticationInfo": {
+      "principalEmail": "naionma7600@gmail.com",
+      "oauthInfo": {
+        "oauthClientId": "764086051850-6qr4p6gpi6hn506pt8ejuq83di341hur.apps.googleusercontent.com"
+      }
+    },
+    "requestMetadata": {
+      "callerIp": "31.131.97.173",
+      "callerSuppliedUserAgent": "Terraform/1.13.0 (+https://www.terraform.io) Terraform-Plugin-SDK/2.40.1 terraform-provider-google/dev7,gzip(gfe)",
+      "requestAttributes": {},
+      "destinationAttributes": {}
+    },
+    "serviceName": "bigquery.googleapis.com",
+    "methodName": "google.cloud.bigquery.v2.DatasetService.InsertDataset",
+    "authorizationInfo": [
+      {
+        "resource": "projects/de-devops-dataops",
+        "permission": "bigquery.datasets.create",
+        "granted": true,
+        "resourceAttributes": {},
+        "permissionType": "ADMIN_WRITE"
+      }
+    ],
+    "resourceName": "projects/de-devops-dataops/datasets/bq_dataset_hw_lecture_1",
+    "metadata": {
+      "@type": "type.googleapis.com/google.cloud.audit.BigQueryAuditMetadata",
+      "datasetCreation": {
+        "reason": "CREATE",
+        "dataset": {
+          "datasetName": "projects/de-devops-dataops/datasets/bq_dataset_hw_lecture_1",
+          "createTime": "2026-10-23T20:33:42.637Z",
+          "updateTime": "2026-10-23T20:33:42.637Z",
+          "datasetInfo": {
+            "labels": {
+              "goog-terraform-provisioned": "true"
+            }
+          },
+          "acl": {
+            "policy": {
+              "bindings": [
+                {
+                  "role": "roles/bigquery.dataEditor",
+                  "members": [
+                    "projectEditor:de-devops-dataops"
+                  ]
+                },
+                {
+                  "members": [
+                    "projectOwner:de-devops-dataops",
+                    "user:naionma7600@gmail.com"
+                  ],
+                  "role": "roles/bigquery.dataOwner"
+                },
+                {
+                  "members": [
+                    "projectViewer:de-devops-dataops"
+                  ],
+                  "role": "roles/bigquery.dataViewer"
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertId": "tq1m9dd808i",
+  "resource": {
+    "type": "bigquery_dataset",
+    "labels": {
+      "project_id": "de-devops-dataops",
+      "dataset_id": "bq_dataset_hw_lecture_1"
+    }
+  },
+  "timestamp": "2026-10-23T20:33:42.759379Z",
+  "severity": "NOTICE",
+  "logName": "projects/de-devops-dataops/logs/cloudaudit.googleapis.com%2Factivity",
+  "receiveTimestamp": "2026-10-23T20:33:43.766139439Z"
+}
+]
