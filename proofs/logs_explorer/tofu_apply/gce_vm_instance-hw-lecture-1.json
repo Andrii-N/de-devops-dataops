@@ -1,0 +1,96 @@
+{
+  "insertId": "2",
+  "jsonPayload": {
+    "@type": "type.googleapis.com/cloud_integrity.IntegrityEvent",
+    "bootCounter": "1",
+    "lateBootReportEvent": {
+      "actualMeasurements": [
+        {
+          "value": "0KUbR/mg3+8bwW0xjQtbxWh/1gI=",
+          "hashAlgo": "SHA1",
+          "pcrNum": "PCR_0"
+        },
+        {
+          "value": "e2nO5UX6ffC5htMBANit8yMYE4Y=",
+          "hashAlgo": "SHA1",
+          "pcrNum": "PCR_1"
+        },
+        {
+          "hashAlgo": "SHA1",
+          "value": "sqg7Dr8vg3Qpmlsr38MeqVWtcjY=",
+          "pcrNum": "PCR_2"
+        },
+        {
+          "hashAlgo": "SHA1",
+          "pcrNum": "PCR_3",
+          "value": "sqg7Dr8vg3Qpmlsr38MeqVWtcjY="
+        },
+        {
+          "pcrNum": "PCR_4",
+          "value": "sQAM3/YZosX03/IJ280g7ClHxgQ=",
+          "hashAlgo": "SHA1"
+        },
+        {
+          "hashAlgo": "SHA1",
+          "pcrNum": "PCR_5",
+          "value": "CPLQVcw8dW5DtXnEWaUAfy0vLbo="
+        },
+        {
+          "value": "sqg7Dr8vg3Qpmlsr38MeqVWtcjY=",
+          "pcrNum": "PCR_6",
+          "hashAlgo": "SHA1"
+        },
+        {
+          "hashAlgo": "SHA1",
+          "pcrNum": "PCR_7",
+          "value": "V/wfEc9odQ5QuIpwo8c5fG+K9YU="
+        },
+        {
+          "hashAlgo": "SHA1",
+          "pcrNum": "PCR_8",
+          "value": "fEjRFt97EnHOcRxFwG69ZxH8M/s="
+        },
+        {
+          "value": "2cCIaRzvyScbvO++LMtyU+sD2yE=",
+          "hashAlgo": "SHA1",
+          "pcrNum": "PCR_9"
+        },
+        {
+          "value": "etH4x5N0GvGEtaoxE2nyc+upzP0=",
+          "hashAlgo": "SHA1",
+          "pcrNum": "PCR_14"
+        }
+      ],
+      "policyMeasurements": [
+        {
+          "value": "0KUbR/mg3+8bwW0xjQtbxWh/1gI=",
+          "pcrNum": "PCR_0",
+          "hashAlgo": "SHA1"
+        },
+        {
+          "pcrNum": "PCR_4",
+          "hashAlgo": "SHA1",
+          "value": "sQAM3/YZosX03/IJ280g7ClHxgQ="
+        },
+        {
+          "value": "V/wfEc9odQ5QuIpwo8c5fG+K9YU=",
+          "pcrNum": "PCR_7",
+          "hashAlgo": "SHA1"
+        }
+      ],
+      "policyEvaluationPassed": true
+    }
+  },
+  "resource": {
+    "type": "gce_instance",
+    "labels": {
+      "zone": "us-central1-c",
+      "project_id": "de-devops-dataops",
+      "instance_id": "2931996463145055583"
+    }
+  },
+  "timestamp": "2026-10-23T21:04:07.797973145Z",
+  "severity": "NOTICE",
+  "logName": "projects/de-devops-dataops/logs/compute.googleapis.com%2Fshielded_vm_integrity",
+  "receiveTimestamp": "2026-10-23T21:04:09.807828055Z"
+}
